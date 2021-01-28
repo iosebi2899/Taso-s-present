@@ -353,10 +353,12 @@ main .main-banner {
 footer .contact-links {
   display: flex;
   justify-content: space-between;
-  margin: 4% 0% 0% 10%;
+  margin: 2% 0%;
   flex-wrap: wrap; }
   footer .contact-links div {
-    width: 33%; }
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; }
     footer .contact-links div a {
       display: inline-block;
       width: 100%; }
@@ -364,7 +366,7 @@ footer .contact-links {
         display: inline-block;
         font-family: 'BPG Nino Mkhedruli Book';
         text-decoration: none;
-        font-size: 20px;
+        font-size: 22px;
         padding-left: 10px;
         color: black; }
   @media (max-width: 1000px) {
@@ -372,8 +374,7 @@ footer .contact-links {
       margin: 4% auto; }
       footer .contact-links div {
         width: 100%;
-        text-align: center;
-        margin-top: 20px; } }
+        text-align: center; } }
 
 footer .fourth {
   padding: 35px 0;
