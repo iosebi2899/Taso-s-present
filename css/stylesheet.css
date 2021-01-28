@@ -30,3 +30,16 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'DM Niko Nikoladze';
+    src: url('DMNikoNikoladze.eot');
+    src: url('../fonts/DMNikoNikoladze.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DMNikoNikoladze.woff2') format('woff2'),
+        url('../fonts/DMNikoNikoladze.woff') format('woff'),
+        url('../fonts/DMNikoNikoladze.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
