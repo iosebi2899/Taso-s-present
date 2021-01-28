@@ -42,19 +42,18 @@ main{
         li{
             
             display: inline-block;
-            padding-right:30px;
             font-family: 'BPG Glaho WEB Caps';
             font-size: 18px;
             color:white;
-            @media (max-width:1000px) {
-                display: none;
-            }
             a{
                 color: white;
                 @include transition;
             }    
             :hover{
                 color:#B8EDF8;
+            }
+            @media (max-width:1024px){
+                font-size: 12px;
             }
         }
         :nth-child(5)
@@ -192,7 +191,6 @@ main{
         .banner-text{
             position: absolute;
             text-align: left;
-            width: 100%;
             top:30%;
             left: 10%;
             color: white;
@@ -207,30 +205,12 @@ main{
                 font-size:30px;
                 padding-bottom: 10px;
             }
-            @media (max-width:1050px){
-                left: 50%;
-            }
-            @media (max-width:800px){
-                bottom: 50%;
-            }
-            @media (max-width:570px){
-                bottom: 40%;
+            @media (max-width:1024px){
                 h1{
                     font-size: 30px;
-                    line-height: 10px;
                 }
                 h2{
-                    font-size:15px;
-                }
-            }
-            @media (max-width:350px){
-                bottom: 40%;
-                h1{
                     font-size: 20px;
-                    line-height: 10px;
-                }
-                h2{
-                    font-size:10px;
                 }
             }
 
@@ -319,7 +299,6 @@ main{
             }
             @media (max-width:768px){
                 width: 100%;
-                margin-bottom:26px;
 
                 :last-child{
                     margin-bottom: 0;
@@ -336,18 +315,24 @@ main{
            :nth-child(3){
                margin-top:33px;
            }
+           :nth-child(2){
+            margin-top: 33px;
+        }
+        :nth-child(1){
+            margin-top:33px;
+        }
         }
     }
 }
 .second{
     padding: 40px 113px;
+    line-height: 25px;
     position: relative;
     background-image:url("../img/bg.jpg");
     color: white;
     @include header;
     @media (max-width:1000px){
-        margin: 0 26px;
-        padding: 60px 0;
+        padding: 60px 30px;
     }
     h2{
         text-align: center;
@@ -359,7 +344,10 @@ main{
     }
 }
 
-
+#instagram{
+    width: 24px;
+    height: auto;
+}
 .third{
     padding: 60px 113px;
     background-color: #242424;

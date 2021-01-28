@@ -29,13 +29,9 @@ main {
       transition: 1s height; }
       .main-header .container .main-navigation li {
         display: inline-block;
-        padding-right: 30px;
         font-family: 'BPG Glaho WEB Caps';
         font-size: 18px;
         color: white; }
-        @media (max-width: 1000px) {
-          .main-header .container .main-navigation li {
-            display: none; } }
         .main-header .container .main-navigation li a {
           color: white;
           -webkit-transition: 0.2s;
@@ -44,6 +40,9 @@ main {
           transition: 0.2s; }
         .main-header .container .main-navigation li :hover {
           color: #B8EDF8; }
+        @media (max-width: 1024px) {
+          .main-header .container .main-navigation li {
+            font-size: 12px; } }
       .main-header .container .main-navigation :nth-child(5) {
         padding-right: 0px; }
       .main-header .container .main-navigation.active {
@@ -152,7 +151,6 @@ main .main-banner {
   main .main-banner .banner-text {
     position: absolute;
     text-align: left;
-    width: 100%;
     top: 30%;
     left: 10%;
     color: white; }
@@ -164,28 +162,11 @@ main .main-banner {
       font-family: 'BPG Nino Mkhedruli Book';
       font-size: 30px;
       padding-bottom: 10px; }
-    @media (max-width: 1050px) {
-      main .main-banner .banner-text {
-        left: 50%; } }
-    @media (max-width: 800px) {
-      main .main-banner .banner-text {
-        bottom: 50%; } }
-    @media (max-width: 570px) {
-      main .main-banner .banner-text {
-        bottom: 40%; }
-        main .main-banner .banner-text h1 {
-          font-size: 30px;
-          line-height: 10px; }
-        main .main-banner .banner-text h2 {
-          font-size: 15px; } }
-    @media (max-width: 350px) {
-      main .main-banner .banner-text {
-        bottom: 40%; }
-        main .main-banner .banner-text h1 {
-          font-size: 20px;
-          line-height: 10px; }
-        main .main-banner .banner-text h2 {
-          font-size: 10px; } }
+    @media (max-width: 1024px) {
+      main .main-banner .banner-text h1 {
+        font-size: 30px; }
+      main .main-banner .banner-text h2 {
+        font-size: 20px; } }
   main .main-banner .banner-read-more {
     position: absolute;
     text-align: center;
@@ -215,7 +196,7 @@ main .main-banner {
   .first .header {
     text-align: center;
     margin-bottom: 14px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'BPG Glaho WEB Caps'; }
   .first .break-line {
     position: absolute;
@@ -272,8 +253,7 @@ main .main-banner {
           flex-wrap: wrap; } }
       @media (max-width: 768px) {
         .first .article-container article {
-          width: 100%;
-          margin-bottom: 26px; }
+          width: 100%; }
           .first .article-container article :last-child {
             margin-bottom: 0; } }
     .first .article-container :last-child {
@@ -282,17 +262,22 @@ main .main-banner {
       .first .article-container :nth-child(4) {
         margin-top: 33px; }
       .first .article-container :nth-child(3) {
+        margin-top: 33px; }
+      .first .article-container :nth-child(2) {
+        margin-top: 33px; }
+      .first .article-container :nth-child(1) {
         margin-top: 33px; } }
 
 .second {
   padding: 40px 113px;
+  line-height: 25px;
   position: relative;
   background-image: url("../img/bg.jpg");
   color: white; }
   .second .header {
     text-align: center;
     margin-bottom: 14px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'BPG Glaho WEB Caps'; }
   .second .break-line {
     position: absolute;
@@ -303,8 +288,7 @@ main .main-banner {
     background-color: black; }
   @media (max-width: 1000px) {
     .second {
-      margin: 0 26px;
-      padding: 60px 0; } }
+      padding: 60px 30px; } }
   .second h2 {
     text-align: center;
     font-family: 'BPG Nino Mkhedruli Book';
@@ -312,6 +296,10 @@ main .main-banner {
     letter-spacing: 0.5px;
     padding-top: 20px;
     word-spacing: 4px; }
+
+#instagram {
+  width: 24px;
+  height: auto; }
 
 .third {
   padding: 60px 113px;
@@ -394,7 +382,7 @@ footer .fourth {
   footer .fourth .header {
     text-align: center;
     margin-bottom: 14px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'BPG Glaho WEB Caps'; }
   footer .fourth .break-line {
     position: absolute;
