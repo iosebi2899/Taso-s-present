@@ -210,7 +210,7 @@ main{
                     font-size: 30px;
                 }
                 h2{
-                    font-size: 15px;
+                    font-size: 14px;
                     padding-bottom: 8px;
                 }
             }
@@ -406,6 +406,9 @@ main{
                     font-size:14px;
                 }
             }
+        }
+        @media (max-width:768px){
+            flex-direction: column-reverse;
         }
     }
 }

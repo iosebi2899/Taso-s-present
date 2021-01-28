@@ -166,7 +166,7 @@ main .main-banner {
       main .main-banner .banner-text h1 {
         font-size: 30px; }
       main .main-banner .banner-text h2 {
-        font-size: 15px;
+        font-size: 14px;
         padding-bottom: 8px; } }
   main .main-banner .banner-read-more {
     position: absolute;
@@ -355,6 +355,9 @@ main .main-banner {
         @media (max-width: 1000px) {
           .third article .right-text h2 {
             font-size: 14px; } }
+    @media (max-width: 768px) {
+      .third article {
+        flex-direction: column-reverse; } }
 
 footer .contact-links {
   display: flex;
