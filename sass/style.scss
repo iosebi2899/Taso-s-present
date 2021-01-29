@@ -334,7 +334,7 @@ main{
     color: white;
     @include header;
     @media (max-width:1000px){
-        padding: 60px 30px;
+        padding: 40px 30px;
     }
     h2{
         text-align: center;
@@ -343,6 +343,9 @@ main{
         letter-spacing: 0.5px;
         padding-top: 20px;
         word-spacing: 4px;
+            @media (max-width:768px){
+                font-size: 16px;
+            }
     }
 }
 .imeno{
@@ -379,7 +382,7 @@ main{
                 width: 40%;
             }
             @media (max-width:768px){
-                width: 100%;
+                width: calc(100% - 50px);
                 margin: 0 30px;
                 margin-top: 70px;
                 
@@ -407,8 +410,12 @@ main{
                 }
             }
         }
+    }
+}
+.imeno-third{
+    article{
         @media (max-width:768px){
-            flex-direction: column-reverse;
+            flex-direction: column-reverse !important;
         }
     }
 }

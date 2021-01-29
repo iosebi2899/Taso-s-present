@@ -291,7 +291,7 @@ main .main-banner {
     background-color: black; }
   @media (max-width: 1000px) {
     .second {
-      padding: 60px 30px; } }
+      padding: 40px 30px; } }
   .second h2 {
     text-align: center;
     font-family: 'BPG Nino Mkhedruli Book';
@@ -299,6 +299,9 @@ main .main-banner {
     letter-spacing: 0.5px;
     padding-top: 20px;
     word-spacing: 4px; }
+    @media (max-width: 768px) {
+      .second h2 {
+        font-size: 16px; } }
 
 .imeno {
   background-position: bottom; }
@@ -334,7 +337,7 @@ main .main-banner {
           width: 40%; } }
       @media (max-width: 768px) {
         .third article .right-text {
-          width: 100%;
+          width: calc(100% - 50px);
           margin: 0 30px;
           margin-top: 70px; } }
       .third article .right-text h1 {
@@ -355,9 +358,10 @@ main .main-banner {
         @media (max-width: 1000px) {
           .third article .right-text h2 {
             font-size: 14px; } }
-    @media (max-width: 768px) {
-      .third article {
-        flex-direction: column-reverse; } }
+
+@media (max-width: 768px) {
+  .imeno-third article {
+    flex-direction: column-reverse !important; } }
 
 footer .contact-links {
   display: flex;
